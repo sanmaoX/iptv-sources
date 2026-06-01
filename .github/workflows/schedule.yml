@@ -52,8 +52,8 @@ jobs:
 
       - name: Publish m3u (Cloudflare direct upload or empty commit)
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ cfat_e9uDhKcW1Z30e0VA3UkCS6W3xk9VRZ1DrWtfjgCcf551d3af }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ 58645430be823031c0ff7357c0b0c060 }}
           PROJECT_NAME: ${{ vars.PROJECT_NAME || secrets.PROJECT_NAME }}
         run: |
           if [ -n "${CLOUDFLARE_API_TOKEN}" ]; then
